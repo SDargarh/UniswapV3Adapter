@@ -13,7 +13,7 @@ This guide walks you through setting up a local Arbitrum fork, deploying adapter
 Create a `.env` file in the root directory with the following variables:
 
 ```env
-INFURA_API_KEY="06628376beef4f4cafeb7ce6f0449ed7"
+INFURA_API_KEY=""
 ADAPTER_ADDRESS="0xB03A64bB249581664753ED44778E4c9693e5b2e5"
 ```
 
@@ -116,7 +116,6 @@ npm run dev
 
 - **Adapter Contract**: `0xB03A64bB249581664753ED44778E4c9693e5b2e5`
 
-*Note: Update this section with additional contract addresses as they become available.*
 
 ## 6. Example GraphQL Queries
 
@@ -222,4 +221,3 @@ The following npm scripts should be available in your `package.json`:
   }
 }
 ```
-The following hardhat scripts should be available in your `hardhat.config.json`:
