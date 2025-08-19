@@ -1,0 +1,26 @@
+{
+  "name": "uniswapv3adapter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "deploy": "npx hardhat run scripts/deploy.ts --network localhost",
+    "fund": "npx hardhat run scripts/fund.ts --network localhost",
+    "test": "npx hardhat run scripts/smoke.ts --network localhost",
+    "node": "npx hardhat node --network hardhat"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "hardhat": "^2.26.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "@rainbow-me/rainbowkit": "^2.2.8",
+    "dotenv": "^17.2.1"
+  }
+}
