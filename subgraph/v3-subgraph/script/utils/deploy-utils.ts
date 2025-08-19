@@ -19,12 +19,12 @@ export const build = async (network: string, subgraphType: string): Promise<void
 }
 
 export const deploy = async (subgraphType: string, isLocal: boolean): Promise<void> => {
-  try {
-    await exec('git diff-index --quiet HEAD -- && git diff --quiet || (exit 1)')
-  } catch (e) {
-    console.log('Error: You have uncommitted changes. Please commit your changes and try again.')
-    process.exit(1)
-  }
+//   try {
+//     await exec('git diff-index --quiet HEAD -- && git diff --quiet || (exit 1)')
+//   } catch (e) {
+//     console.log('Error: You have uncommitted changes. Please commit your changes and try again.')
+//     process.exit(1)
+//   }
 
   const { stdout: gitHash } = await exec('git rev-parse --short HEAD')
   const gitHashString = gitHash.toString().trim()
