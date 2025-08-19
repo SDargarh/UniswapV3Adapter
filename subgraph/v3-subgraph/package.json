@@ -6,7 +6,7 @@
   "scripts": {
     "build": "cross-env ts-node ./script/build",
     "lint": "eslint . --ext .ts --fix",
-    "create-subgraph": "graph create --node http://localhost:8020/ v3-tokens-arb-adapter"
+    "create-subgraph": "graph create --node http://localhost:8020/ v3-tokens-arb-adapter1"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.64.1",
